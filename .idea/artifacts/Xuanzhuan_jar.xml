@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Xuanzhuan:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Xuanzhuan_jar</output-path>
+    <root id="archive" name="Xuanzhuan.jar">
+      <element id="module-output" name="Xuanzhuan" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.shape.Line?>
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.myController">
+    <top>
+        <AnchorPane prefHeight="140" style="-fx-background-color: black">
+            <Button fx:id="button" layoutX="500" layoutY="10" onAction="#rotate" text="Button" />
+            <Button fx:id="close" layoutX="700" layoutY="10" onAction="#close" text="Close" />
+        </AnchorPane>
+
+    </top>
+
+    <left>
+        <AnchorPane fx:id="leftAnchorPane" prefWidth="560" style="-fx-background-color: white" />
+    </left>
+
+    <right>
+        <AnchorPane prefWidth="560" style="-fx-background-color: black" >
+            <children>
+                <ImageView fx:id="single" fitHeight="160" fitWidth="160" layoutX="0" layoutY="0"  preserveRatio="false" >
+                    <image>
+                        <Image url="/single.png" />
+                    </image>
+                </ImageView>
+
+                <Pane prefHeight="160" prefWidth="160" style="-fx-background-color: green" layoutX="0" layoutY="160">
+
+                </Pane>
+
+            </children>
+        </AnchorPane>
+    </right>
+
+    <!-- 中心布局 800×800 -->
+    <center>
+        <AnchorPane fx:id="anchorPane" prefHeight="800" prefWidth="800" style="-fx-background-color:red">
+           <children>
+               <!-- 这里图片需要不固定长宽比 -->
+                <ImageView fx:id="imageView1" fitHeight="100" fitWidth="100" layoutX="300" layoutY="700"  preserveRatio="false" >
+                   <image>
+                      <Image url="/flower.jpeg" />
+                   </image>
+                </ImageView>
+
+                <ImageView fx:id="imageView2" fitHeight="100" fitWidth="100" layoutX="-100" layoutY="300"  preserveRatio="false" >
+                   <image>
+                       <Image url="/flower.png" />
+                   </image>
+                </ImageView>
+
+               <ImageView fx:id="imageView3" fitHeight="100" fitWidth="100" layoutX="300" layoutY="-50"  preserveRatio="false" >
+                   <image>
+                       <Image url="/flower.jpeg" />
+                   </image>
+               </ImageView>
+
+               <ImageView fx:id="imageView4" fitHeight="100" fitWidth="100" layoutX="600" layoutY="300"  preserveRatio="false" >
+                   <image>
+                       <Image url="/flower.png" />
+                   </image>
+               </ImageView>
+
+           </children>
+            
+        </AnchorPane>
+    </center>
+    <!-- 限定高度 -->
+    <bottom>
+        <AnchorPane prefHeight="140" />
+
+    </bottom>
+
+
+
+</BorderPane>
